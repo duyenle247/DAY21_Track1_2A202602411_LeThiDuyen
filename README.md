@@ -5,7 +5,8 @@
 ## 1. Thông tin Cá nhân & Ngành Chọn Phân Tích
 
 - **Họ và tên:** Lê Thị Duyên
-- **Mã học viên:** 2A202602411
+- **Mã học viên / MSSV:** 2A202602411
+- **Lớp / Khóa:** Track 1 (Nhóm Matcha)
 - **Ngành được chọn:** **Giáo dục / AI tutor**
 - **Phạm vi gợi ý theo đề:** AI hỗ trợ học tập, hướng dẫn người học, chấm điểm tự động và giám sát liêm chính học thuật (*AI-assisted learning, tutoring, algorithmic grading & automated proctoring*).
 
