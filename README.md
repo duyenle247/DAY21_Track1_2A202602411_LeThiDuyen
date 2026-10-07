@@ -24,9 +24,12 @@
 
 ---
 
-## 3. Danh mục 3 Brief Case Nghiên cứu Thực tế
+## 3. Danh mục 3 Brief Case Nghiên cứu Thực tế & Harm Map Worksheets
 
 Dưới đây là 3 case study có thật trong ngành Giáo dục & AI Tutor, đại diện cho 3 lát cắt rủi ro then chốt: **Định kiến công cụ phát hiện AI (AI Detection Bias)**, **Sự cố thuật toán chuẩn hóa điểm thi (Algorithmic Grading Failure)**, và **Hệ thống giám thị thi AI xâm phạm quyền riêng tư & phân biệt đối xử (AI Proctoring & Surveillance Risk)**.
+
+Mỗi case được phân tích theo đầy đủ cấu trúc Brief Case và Worksheet Harm Map 11 trường:
+$$\text{Moment} \rightarrow \text{Mode} \rightarrow \text{Layer} \rightarrow \text{Harm} \rightarrow \text{Severity} \quad (+ \text{Stakeholders, Lens, Scale, Probability, Frequency, Căn cứ})$$
 
 ---
 
@@ -51,6 +54,22 @@ Dưới đây là 3 case study có thật trong ngành Giáo dục & AI Tutor, �
   - 🔗 [Stanford HAI: AI Detectors Biased Against Non-Native English Writers](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers)
   - 🔗 [Cell Press Patterns / arXiv:2304.02819](https://arxiv.org/abs/2304.02819)
 
+#### 4. Harm Map Worksheet (11 Trường Phân Tích)
+
+| STT | Trường thông tin (Harm Map Field) | Nội dung đánh giá chi tiết |
+| :---: | :--- | :--- |
+| **1** | **High-risk moment** | Thời điểm giảng viên/nhà trường đưa bài luận (essay) của sinh viên vào công cụ AI Detector để sàng lọc tự động trước khi chấm điểm học phần hoặc xét duyệt học bổng/tốt nghiệp. |
+| **2** | **Failure mode** | **Bias / fairness** *(kèm Over-reliance từ phía người dùng/giảng viên)*: Mô hình thiên vị bất công đối với nhóm người học phi bản xứ; giảng viên tin tưởng mù quáng vào kết quả phần trăm của công cụ mà không đối soát. |
+| **3** | **Layer** | **Model & UX**:<br>• *Model layer:* Mô hình lấy thước đo perplexity làm proxy phát hiện AI, vốn trùng khớp với mẫu hình ngôn ngữ của người học ESL.<br>• *UX layer:* Giao diện hiển thị nhãn khẳng định tuyệt đối (ví dụ: "98% AI-generated") mà không hiển thị độ lệch chuẩn hay cảnh báo sai số trên người học ngoại ngữ. |
+| **4** | **Stakeholder** | • **Bên chịu tác động trực tiếp:** Sinh viên quốc tế, người học tiếng Anh phi bản xứ (ESL/EFL).<br>• **Bên ra quyết định:** Giảng viên, hội đồng kỷ luật học thuật của nhà trường.<br>• **Bên liên quan khác:** Cơ quan cấp thị thực du học, đơn vị tài trợ học bổng. |
+| **5** | **Harm (Mẫu chuẩn)** | **[Sinh viên quốc tế / người học tiếng Anh phi bản xứ]** bị **[gán nhãn oan là gian lận học thuật, đối mặt với nguy cơ bị điểm 0, hủy học bổng hoặc bị đình chỉ học tập]** khi **[công cụ AI Detector đánh giá nhầm bài viết tự làm của họ là văn bản do AI tạo ra chỉ vì cấu trúc từ vựng đơn giản, ít biến thể (low perplexity)]**. |
+| **6** | **Harm lens** | **Opportunity loss** *(mất cơ hội)* & **Dignity loss** *(tổn hại phẩm giá)*. |
+| **7** | **Severity** | **High** |
+| **8** | **Scale** | **High** *(Phạm vi toàn cầu trên hàng triệu sinh viên quốc tế; tỷ lệ mẫu nghiên cứu bị ảnh hưởng lên tới 61.22%)* |
+| **9** | **Probability** | **High** *(Tỷ lệ thực nghiệm đo lường được là 61.22%, cá biệt một số công cụ lên tới 97.8%)* |
+| **10** | **Frequency** | **High** *(Lặp lại thường xuyên ở mọi kỳ nộp bài tập/tiểu luận nếu nhà trường áp dụng AI detector làm quy trình kiểm duyệt bắt buộc)* |
+| **11** | **Vì sao? (Căn cứ đánh giá)** | • *Về Severity (High):* Bị cáo buộc gian lận học thuật (academic dishonesty) để lại vết nhơ vĩnh viễn trong học bạ (transcript), có thể dẫn đến việc tước học bổng và hủy visa du học.<br>• *Về Scale & Probability (High):* Đo lường thực nghiệm trên 91 bài viết TOEFL cho thấy hơn 6/10 bài bị gán nhãn nhầm; hàng trăm ngàn sinh viên quốc tế đang học tập tại các quốc gia nói tiếng Anh chịu rủi ro trực tiếp.<br>• *Về Mode & Layer:* Giao diện (UX) thiếu cảnh báo sai số, còn mô hình (Model) lấy đặc tính ngôn ngữ nghèo nàn làm bằng chứng gian lận, trực tiếp biến sự hạn chế về ngoại ngữ thành tội danh học thuật. |
+
 ---
 
 ### Case 2: Khủng hoảng thuật toán chuẩn hóa điểm thi tốt nghiệp A-Levels của Ofqual (Vương quốc Anh, 2020)
@@ -74,6 +93,22 @@ Dưới đây là 3 case study có thật trong ngành Giáo dục & AI Tutor, �
   - 🔗 [BBC News: A-levels: Nearly 40% of teacher grades downgraded in England](https://www.bbc.com/news/education-53755494)
   - 🔗 [The Guardian: Almost 40% of English A-level results downgraded after exams cancelled](https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-a-level-results-downgraded-after-exams-cancelled)
   - 🔗 [Ofqual Official Report: Awarding GCSE, AS & A levels in summer 2020](https://www.gov.uk/government/publications/awarding-gcse-as-a-levels-in-summer-2020-interim-report)
+
+#### 4. Harm Map Worksheet (11 Trường Phân Tích)
+
+| STT | Trường thông tin (Harm Map Field) | Nội dung đánh giá chi tiết |
+| :---: | :--- | :--- |
+| **1** | **High-risk moment** | Thời điểm cơ quan khảo thí Ofqual chạy thuật toán chuẩn hóa điểm để chốt và công bố điểm thi tốt nghiệp chính thức A-Levels cho toàn bộ học sinh trên cả nước, dùng làm căn cứ quyết định xét tuyển đại học. |
+| **2** | **Failure mode** | **Bias / fairness** *(kèm Escalation failure)*: Thuật toán thiên vị mang tính hệ thống theo xuất thân kinh tế - xã hội; hệ thống triệt tiêu cơ chế khiếu nại/can thiệp của con người trước khi phát hành điểm. |
+| **3** | **Layer** | **Model & Grounding**:<br>• *Model layer:* Thiết kế thuật toán đưa trọng số lịch sử trường học vào làm biến số quyết định điểm số cá nhân, đồng thời ưu tiên miễn trừ chuẩn hóa cho lớp nhỏ dưới 15 học sinh.<br>• *Grounding layer:* Dữ liệu thành tích lịch sử 3 năm của trường học không phản ánh đúng năng lực và nỗ lực thực tế của lứa học sinh hiện tại. |
+| **4** | **Stakeholder** | • **Bên chịu tác động trực tiếp:** Học sinh các trường công lập toàn diện (comprehensive schools), học sinh nghèo.<br>• **Bên bị phủ nhận chuyên môn:** Giáo viên và ban giám hiệu nhà trường.<br>• **Bên ra quyết định & Vận hành:** Cơ quan khảo thí Ofqual, Bộ Giáo dục Anh, các trường đại học (Russell Group, Oxford, Cambridge). |
+| **5** | **Harm (Mẫu chuẩn)** | **[Học sinh các trường công lập toàn diện]** bị **[thuật toán tự động hạ điểm tốt nghiệp A-Levels từ 1 đến 3 bậc điểm so với năng lực thực tế, dẫn đến việc mất suất trúng tuyển vào các trường đại học hàng đầu]** khi **[thuật toán Ofqual ép điểm số cá nhân vào phân phối thành tích lịch sử thấp của trường công lập trong quá khứ]**. |
+| **6** | **Harm lens** | **Opportunity loss** *(mất cơ hội học tập & thăng tiến xã hội)* & **Dignity loss** *(tổn hại phẩm giá, công sức bị xem thường)*. |
+| **7** | **Severity** | **High** |
+| **8** | **Scale** | **High** *(Toàn bộ hệ thống giáo dục phổ thông nước Anh; 280.711 điểm số của học sinh bị hạ bậc)* |
+| **9** | **Probability** | **High** *(Tỷ lệ thực tế bị hạ điểm là 39.1% trên toàn bộ kết quả nộp lên)* |
+| **10** | **Frequency** | **Low** *(Sự cố bùng phát trong kỳ thi tốt nghiệp mùa hè năm 2020 do bối cảnh phong tỏa dịch bệnh)* |
+| **11** | **Vì sao? (Căn cứ đánh giá)** | • *Về Severity (High):* Điểm A-Levels là căn cứ duy nhất để các trường đại học cấp chỉ tiêu nhập học. Việc bị hạ điểm khiến học sinh lỡ mất kỳ nhập học và học bổng; dù sau đó chính phủ hủy bỏ thuật toán thì nhiều trường đại học đã hết suất.<br>• *Về Scale (High) & Probability (High):* Có số liệu kiểm chứng chính thức từ Ofqual với 280.711 điểm bị dìm (39.1% tổng số bài), phản ánh rủi ro mang tính hệ thống.<br>• *Về Frequency (Low):* Diễn ra 1 lần ở quy mô kỳ thi quốc gia.<br>• *Về Mode & Layer:* Thuật toán ưu tiên mục tiêu vĩ mô "ngăn lạm phát điểm" bằng cách dùng dữ liệu quá khứ (Grounding) để kìm hãm người học trường công lập, gây bất bình đẳng giai cấp trầm trọng. |
 
 ---
 
@@ -100,12 +135,29 @@ Dưới đây là 3 case study có thật trong ngành Giáo dục & AI Tutor, �
   - 🔗 [MIT Technology Review: AI proctoring software is failing students](https://www.technologyreview.com/2020/11/10/1011928/ai-proctoring-remote-learning-software-examity-proctorio-proctoru/)
   - 🔗 [NPR: Federal Judge Rules Room Scans For Online Tests Are Unconstitutional (Ogletree v. Cleveland State University, 2022)](https://www.npr.org/2022/08/25/1119337956/test-proctoring-room-scans-unconstitutional-cleveland-state-university)
 
+#### 4. Harm Map Worksheet (11 Trường Phân Tích)
+
+| STT | Trường thông tin (Harm Map Field) | Nội dung đánh giá chi tiết |
+| :---: | :--- | :--- |
+| **1** | **High-risk moment** | Trong suốt quá trình sinh viên làm bài thi trực tuyến tại nhà, phần mềm AI Proctorio liên tục quét webcam, micro và phân tích ánh mắt, khuôn mặt, tư thế ngồi để tự động tính điểm nghi ngờ gian lận (Suspicion Score) và gửi cờ cảnh báo (Flag) đến giám thị. |
+| **2** | **Failure mode** | **Bias / fairness** *(kỳ thị chủng tộc & khuyết tật)* kết hợp **Privacy leak** *(xâm phạm đời tư)* và **Over-reliance** *(giám thị quá tin cờ đỏ của AI)*. |
+| **3** | **Layer** | **Model & UX**:<br>• *Model layer:* Thuật toán nhận diện khuôn mặt thiếu dữ liệu người da sẫm màu; mô hình phát hiện bất thường coi cử động mắt/đầu không điển hình là dấu hiệu gian lận.<br>• *UX layer:* Giao diện tô đỏ điểm số "Suspicion Score" khiến giám thị phát sinh thiên kiến quy chụp (confirmation bias). |
+| **4** | **Stakeholder** | • **Bên chịu tác động trực tiếp:** Sinh viên dự thi trực tuyến (đặc biệt là sinh viên da màu, học sinh khuyết tật/thần kinh đa dạng, học sinh nghèo không có phòng riêng).<br>• **Bên giám sát:** Giảng viên, giám thị coi thi.<br>• **Bên vận hành & Cung cấp:** Ban giám hiệu nhà trường, công ty phần mềm Proctorio Inc. |
+| **5** | **Harm (Mẫu chuẩn)** | **[Sinh viên da màu và học sinh mắc hội chứng thần kinh đa dạng/ADHD]** bị **[hệ thống AI từ chối nhận diện khuôn mặt để vào thi hoặc liên tục gắn cờ gian lận oan uổng, dẫn đến bị hủy kết quả bài thi và khủng hoảng tâm lý nghiêm trọng]** khi **[họ có cử động mắt, thay đổi tư thế ngồi không điển hình hoặc thiếu điều kiện ánh sáng phòng theo tiêu chuẩn mà mô hình áp đặt]**. |
+| **6** | **Harm lens** | **Dignity loss** *(tổn hại phẩm giá)*, **Privacy loss** *(mất riêng tư)* & **Opportunity loss** *(mất cơ hội thi cử)*. |
+| **7** | **Severity** | **High** |
+| **8** | **Scale** | **High** *(Hàng triệu sinh viên tại hơn 1.000 trường đại học trên thế giới sử dụng phần mềm; 67% giáo viên ghi nhận công cụ dùng để kỷ luật)* |
+| **9** | **Probability** | **Medium to High** *(54% học sinh khuyết tật báo cáo bị hệ thống gắn cờ; lỗi nhận diện da màu diễn ra phổ biến trong ánh sáng yếu)* |
+| **10** | **Frequency** | **High** *(Lặp lại trong từng phiên thi trực tuyến của mỗi kỳ thi học kỳ)* |
+| **11** | **Vì sao? (Căn cứ đánh giá)** | • *Về Severity (High):* Vi phạm quyền riêng tư nghiêm trọng (Tòa án Liên bang Mỹ phán quyết vi phạm Hiến pháp Hoa Kỳ trong vụ án phòng ngủ sinh viên); hủy hoại tâm lý làm bài thi và dẫn đến việc bị hủy điểm môn học.<br>• *Về Scale (High) & Frequency (High):* Hệ thống chạy liên tục theo thời gian thực trên hàng triệu sinh viên qua mỗi kỳ thi.<br>• *Về Mode & Layer:* Mô hình (Model layer) áp đặt một chuẩn mực sinh học hẹp hòi (người da sáng, ngồi bất động tuyệt đối), kết hợp với UX kích hoạt tâm lý nghi ngờ của giám thị, dẫn đến sự kỳ thị kép về cả chủng tộc lẫn thể chất. |
+
 ---
 
 ## 4. Tổng kết & Bài học Thực thi cho Product Manager (AI EdTech)
 
-Từ 3 case study thực tế trong ngành Giáo dục / AI Tutor, các nguyên tắc quản trị rủi ro AI bắt buộc phải áp dụng trong phát triển sản phẩm gồm:
+Từ 3 case study và các bảng phân tích Harm Map trong ngành Giáo dục / AI Tutor, các nguyên tắc quản trị rủi ro AI bắt buộc phải áp dụng trong phát triển sản phẩm gồm:
 
 1. **Không bao giờ áp dụng cơ chế tự động hóa hoàn toàn (Zero-touch) trong các quyết định High-stakes:** Mọi cảnh báo từ AI (như phát hiện đạo văn, gian lận, hạ điểm) chỉ được đóng vai trò là cờ tham vấn (*flagging heuristic*), quyết định cuối cùng bắt buộc phải qua quy trình đối chất và đánh giá sư phạm của con người (*Human-in-the-loop / Human review*).
 2. **Kiểm thử độc lập định kiến dữ liệu (Disparate Impact Audit) trước khi triển khai:** Phải đo lường tỷ lệ lỗi phân loại nhầm (false-positive rates) trên các phân khúc người dùng yếu thế (người học phi bản ngữ, sinh viên da màu, người khuyết tật/thần kinh đa dạng) nhằm ngăn chặn việc trừng phạt người dùng dựa trên phong cách ngôn ngữ hay đặc tính sinh lý.
-3. **Minh bạch hóa cơ chế giải trình (Explainability & Contestability):** Người học phải luôn có quyền được giải thích lý do tại sao hệ thống đưa ra phán quyết và có kênh khiếu nại minh bạch, nhanh chóng khi nghi ngờ AI đưa ra kết quả sai lệch.
+3. **Cải tiến thiết kế UX để chống Over-reliance:** Không bao giờ hiển thị điểm số khẳng định tuyệt đối (như "99% AI", "95% Cheating"). Giao diện phải đi kèm khoảng tin cậy (*confidence interval*), danh sách các nguyên nhân có thể gây dương tính giả, và nút chuyển giao (*Escalation flow*) dễ dàng để chuyển vụ việc cho hội đồng người thật xử lý.
+4. **Minh bạch hóa cơ chế giải trình (Explainability & Contestability):** Người học phải luôn có quyền được giải thích lý do tại sao hệ thống đưa ra phán quyết và có kênh khiếu nại minh bạch, nhanh chóng khi nghi ngờ AI đưa ra kết quả sai lệch.
